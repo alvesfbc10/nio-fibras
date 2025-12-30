@@ -108,13 +108,75 @@
             font-size: 1.1rem;
             text-align: center;
             max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            margin: 20px;
+        }
+        .feature h3 {
+            color: #2e7d32;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .plan {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .plan:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .plan h3 {
+            color: #2e7d32;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan li {
+            margin-bottom: 10px;
+        }
+        .testimonials {
+            background-color: #f5f5f5;
+            padding: 60px 20px;
+        }
+        .testimonial {
+            max-width: 600px;
             margin: 0 auto;
+            text-align: center;
+            font-style: italic;
         }
         footer {
-            background-color: #f5f5f5;
+            background-color: #2e7d32;
+            color: #ffffff;
             padding: 20px;
             text-align: center;
-            color: #666;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
         }
         @media (max-width: 768px) {
             .hero h1 {
@@ -128,6 +190,10 @@
             }
             .logo {
                 font-size: 1.2rem;
+            }
+            .features, .plans {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
@@ -156,12 +222,75 @@
     </section>
 
     <section class="section">
-        <h2>Por que escolher Nio Fibras?</h2>
-        <p>Com tecnologia de ponta e compromisso com a qualidade, garantimos uma experiência de internet superior. Diga adeus às quedas de conexão e olá a uma rede que funciona quando você precisa.</p>
+        <h2>Sobre a Nio Fibras</h2>
+        <p>Somos uma empresa nova no mercado de internet, dedicada a fornecer soluções de conectividade de alta qualidade. Nossa missão é transformar a experiência de internet das pessoas, oferecendo planos acessíveis e suporte excepcional. Com infraestrutura moderna e equipe especializada, garantimos que sua conexão seja sempre estável e rápida.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Tecnologia Avançada</h3>
+                <p>Utilizamos fibra óptica de ponta para velocidades ultrarrápidas.</p>
+            </div>
+            <div class="feature">
+                <h3>Suporte 24/7</h3>
+                <p>Equipe pronta para ajudar a qualquer hora, com atendimento humanizado.</p>
+            </div>
+            <div class="feature">
+                <h3>Compromisso com a Qualidade</h3>
+                <p>Focamos em satisfação do cliente, sem interrupções indesejadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Planos para Pessoas Físicas</h2>
+        <p>Oferecemos planos personalizados para residências, com velocidades que atendem desde o uso básico até o streaming em alta definição. Escolha o plano ideal para sua família e desfrute de uma internet confiável.</p>
+        <div class="plans">
+            <div class="plan">
+                <h3>Plano Básico</h3>
+                <p>Velocidade de até 50 Mbps</p>
+                <ul>
+                    <li>Ideal para navegação e e-mails</li>
+                    <li>Preço acessível</li>
+                    <li>Instalação gratuita</li>
+                </ul>
+                <a href="https://wa.me/message/QF2XY7K2FBMRI1" class="cta-button">Saiba Mais</a>
+            </div>
+            <div class="plan">
+                <h3>Plano Intermediário</h3>
+                <p>Velocidade de até 200 Mbps</p>
+                <ul>
+                    <li>Perfeito para streaming e jogos</li>
+                    <li>Suporte prioritário</li>
+                    <li>Wi-Fi incluído</li>
+                </ul>
+                <a href="https://wa.me/message/QF2XY7K2FBMRI1" class="cta-button">Saiba Mais</a>
+            </div>
+            <div class="plan">
+                <h3>Plano Premium</h3>
+                <p>Velocidade de até 500 Mbps</p>
+                <ul>
+                    <li>Para famílias grandes e trabalho remoto</li>
+                    <li>Velocidade ilimitada</li>
+                    <li>Benefícios extras</li>
+                </ul>
+                <a href="https://wa.me/message/QF2XY7K2FBMRI1" class="cta-button">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial">
+            <p>"Desde que troquei para Nio Fibras, minha internet nunca mais caiu. Recomendo a todos!"</p>
+            <p>- João Silva, Cliente Residencial</p>
+        </div>
+        <div class="testimonial">
+            <p>"Suporte incrível e velocidades que impressionam. Vale cada centavo."</p>
+            <p>- Maria Oliveira, Cliente Residencial</p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2023 Nio Fibras. Todos os direitos reservados.</p>
+        <p>&copy; 2023 Nio Fibras. Todos os direitos reservados. <a href="https://wa.me/message/QF2XY7K2FBMRI1">Contato via WhatsApp</a></p>
     </footer>
 </body>
 </html>
